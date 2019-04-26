@@ -7,9 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.fly.mix.Util.AppManager;
 
 /**
- * @Author admin
- * Created on 2019/4/26 11:00.
- * Desc:Mix
+ *
  */
 public  abstract  class BaseActivity extends AppCompatActivity {
     @Override

@@ -47,10 +47,10 @@ public class ApiClient {
         return mRetrofit;
     }
 
-//    /**
-//     * 创建APIService
-//     */
-//    public static <T> T createApiService(Class<T> clazz) {
-//        return getRetrofit().create(clazz);
-//    }
+    /**
+     * 创建APIService
+     */
+    public static <T> T createApiService(Class<T> clazz) {
+        return getRetrofit().create(clazz);
+    }
 }

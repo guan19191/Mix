@@ -5,9 +5,7 @@ import com.fly.mix.callback.BaseRequestCallback;
 import io.reactivex.observers.DisposableObserver;
 
 /**
- * @Author admin
- * Created on 2019/4/25 11:56.
- * Desc:Mix
+ *
  */
 public class BaseObserver extends DisposableObserver<String> {
     BaseRequestCallback callBack;

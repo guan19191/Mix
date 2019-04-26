@@ -4,9 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- * @Author admin
- * Created on 2019/4/26 10:59.
- * Desc:Mix
+ *
  */
 public abstract class BaseMvpActivity<V extends IView, P extends BasePresenter<V>> extends BaseActivity {
     public P mPresenter;
