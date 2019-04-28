@@ -26,6 +26,9 @@ public interface MainContract {
 
         }
 
+
+
+
         @Override
         public void onStart() {
             super.onStart();
@@ -41,7 +44,9 @@ public interface MainContract {
 
         @Override
         public void onRequestStart() {
-            getView().showLoading();
+            if(isViewAttached()){
+                getView().showLoading();
+            }
         }
 
         @Override
@@ -61,7 +66,9 @@ public interface MainContract {
 
         @Override
         public void onRequestComplete() {
-            getView().hideLoading();
+            if(isViewAttached()){
+                getView().hideLoading();
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 package com.fly.mix;
 
-import com.fly.mix.base.BaseMvpActivity;
+import com.fly.mix.base.activity.BaseMvpActivity;
 import com.fly.mix.contract.MainContract;
 import com.fly.mix.contract.MainContract.MainPresenter;
 

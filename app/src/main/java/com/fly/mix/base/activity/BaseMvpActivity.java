@@ -1,7 +1,11 @@
-package com.fly.mix.base;
+package com.fly.mix.base.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+
+import com.fly.mix.base.BasePresenter;
+import com.fly.mix.base.IView;
+import com.fly.mix.base.activity.BaseActivity;
 
 /**
  *
@@ -27,7 +31,7 @@ public abstract class BaseMvpActivity<V extends IView, P extends BasePresenter<V
     protected void onDestroy() {
         super.onDestroy();
         if (mPresenter != null) {
-            mPresenter.onDestroy();
+            mPresenter.detachView();
         }
     }
 }
